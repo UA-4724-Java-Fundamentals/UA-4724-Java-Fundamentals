@@ -22,14 +22,14 @@ public class PhoneCallCostCalculator {
             return;
         }
 
-         c1 = Double.parseDouble(parts[0]);
-         c2 = Double.parseDouble(parts[1]);
-         c3 = Double.parseDouble(parts[2]);
-         t1 = Double.parseDouble(parts[3]);
-         t2 = Double.parseDouble(parts[4]);
-         t3 = Double.parseDouble(parts[5]);
+        c1 = Double.parseDouble(parts[0]);
+        c2 = Double.parseDouble(parts[1]);
+        c3 = Double.parseDouble(parts[2]);
+        t1 = Double.parseDouble(parts[3]);
+        t2 = Double.parseDouble(parts[4]);
+        t3 = Double.parseDouble(parts[5]);
 
-         Double totalCost = c1  * t1 + c2 * t2 + c3 * t3;
+        Double totalCost = c1 * t1 + c2 * t2 + c3 * t3;
 
         System.out.println(totalCost);
     }

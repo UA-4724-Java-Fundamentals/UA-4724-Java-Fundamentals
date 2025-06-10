@@ -13,7 +13,7 @@ public class UserInfo {
         name = bufferName.readLine();
 
         System.out.println("Where do you live, " + name + "?");
-        BufferedReader bufferAddress= new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader bufferAddress = new BufferedReader(new InputStreamReader(System.in));
         address = bufferAddress.readLine();
 
         String result = String.format("Name: %s, Address: %s", name, address);
