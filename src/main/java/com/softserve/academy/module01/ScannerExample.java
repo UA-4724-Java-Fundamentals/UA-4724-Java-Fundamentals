@@ -16,5 +16,7 @@ public class ScannerExample {
         System.out.println("Hello " + name + ", you are " + age + " years old.");
 
         scanner.close();
+
+
     }
 }
