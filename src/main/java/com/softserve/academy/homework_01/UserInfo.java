@@ -1,4 +1,4 @@
-package com.softserve.academy.homework_1;
+package com.softserve.academy.homework_01;
 
 import java.util.Scanner;
 
@@ -9,10 +9,11 @@ public class UserInfo {
         Scanner sc = new Scanner(System.in);
 
         // Prompt the user to enter the name and address
-        System.out.println("What is your name?" );
+        System.out.println("What is your name?"
+        );
         String name = sc.nextLine();
 
-        System.out.println("Where do you live, " + name + "?" );
+        System.out.println("Where do you live, " + name + "?");
         String address = sc.nextLine();
 
         // Output the complete information

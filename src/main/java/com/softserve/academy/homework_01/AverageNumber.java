@@ -1,4 +1,4 @@
-package com.softserve.academy.homework_1;
+package com.softserve.academy.homework_01;
 
 // Option 1
 /*
@@ -37,9 +37,7 @@ public class AverageNumber {
  */
 
 
-
 // Option 2: Using an array and loop
-
 
 
 import java.util.Scanner;
@@ -90,8 +88,7 @@ public class AverageNumber {
 }
 
 
-
-  // OPTION 3: Using a separate method to calculate average
+// OPTION 3: Using a separate method to calculate average
 
 /*
 import java.util.Scanner;
