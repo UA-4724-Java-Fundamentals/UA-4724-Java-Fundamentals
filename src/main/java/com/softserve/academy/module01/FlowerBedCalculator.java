@@ -16,5 +16,7 @@ public class FlowerBedCalculator {
         System.out.println("Perimeter of the flower bed: " + perimeter);
         System.out.println("Area of the flower bed: " + area);
 
+        scanner.close();
+
     }
 }
