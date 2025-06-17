@@ -2,7 +2,6 @@ package com.softserve.academy.homework04;
 
 import java.util.Objects;
 import java.util.Scanner;
-import java.util.SimpleTimeZone;
 
 public class Faculty {
     static Scanner scanner = new Scanner(System.in);
