@@ -1,4 +1,4 @@
-package com.softserve.academy.homework3;
+package com.softserve.academy.homework2;
 
 public class Triangle {
     private int side1;
