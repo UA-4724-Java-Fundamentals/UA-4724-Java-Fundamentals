@@ -31,6 +31,6 @@ public class Point {
 
     @Override
     public String toString() {
-        return "pointX : " + this.x + " ,pointY " + this.y;
+        return "(X : " + this.x + " , Y : " + this.y + ")";
     }
 }
