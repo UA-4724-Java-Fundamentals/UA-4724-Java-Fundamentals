@@ -1,4 +1,4 @@
-package com.softserve.academy.homework06;
+package com.softserve.academy.homework06.car;
 
 public class CarApp {
     public static void main(String[] args) {

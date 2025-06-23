@@ -1,4 +1,4 @@
-package com.softserve.academy.homework06;
+package com.softserve.academy.homework06.car;
 
 public class Sedan extends Car {
     public Sedan(String model, int maxSpeed, int yearOfProduction) {

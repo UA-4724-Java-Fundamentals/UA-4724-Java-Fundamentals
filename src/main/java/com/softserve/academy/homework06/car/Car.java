@@ -1,4 +1,4 @@
-package com.softserve.academy.homework06;
+package com.softserve.academy.homework06.car;
 
 public abstract class Car {
     private final String model;

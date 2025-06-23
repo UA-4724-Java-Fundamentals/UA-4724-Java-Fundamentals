@@ -1,4 +1,4 @@
-package com.softserve.academy.homework06;
+package com.softserve.academy.homework06.line;
 
 public class Line {
     private Point point1;
