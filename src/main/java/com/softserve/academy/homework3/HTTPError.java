@@ -7,7 +7,7 @@ public enum HTTPError {
     ERROR_404("Not Found"),
     ERROR_405("Method Not Allowed");
 
-    String message;
+    final String message;
 
     HTTPError(String str) {
         message = str;
