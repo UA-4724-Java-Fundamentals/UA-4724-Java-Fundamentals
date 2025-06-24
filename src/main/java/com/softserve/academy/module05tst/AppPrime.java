@@ -11,12 +11,14 @@ public class AppPrime {
         int k = scanner.nextInt();
         //
         boolean isPrime = true;
-        for (int i = 2; i < (int) Math.sqrt(k); i = i + 2) {
+        for (int i = 3; i <= (int) (Math.sqrt(k) + 0.1); i = i + 2) {
+            System.out.print(i + "  ");
             if (k % i == 0) {
+                System.out.print(k + " % " + i + " == 0");
                 isPrime = false;
                 break;
             }
         }
-        System.out.print("isPrime = " + isPrime);
+        System.out.print("\nisPrime = " + isPrime);
     }
 }
