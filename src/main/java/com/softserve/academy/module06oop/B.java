@@ -13,7 +13,7 @@ public class B extends A {
     }
 
     @Override
-    public void m1() {
+    public void m1() {  // Runtime Polymorphism
         System.out.println("\tpublic void m1() from +++ B +++ done");
     }
 

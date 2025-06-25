@@ -9,6 +9,7 @@ public class AppParam {
         System.out.println("done work(...), i = " + i);
     }
 
+    // Compile Polymorphism
     public void work(StringBuilder sb) { // Overload
         System.out.println("start work(...), sb = " + sb);
         sb.append(" work added");
