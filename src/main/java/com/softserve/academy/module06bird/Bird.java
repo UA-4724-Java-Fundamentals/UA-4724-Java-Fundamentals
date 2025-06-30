@@ -16,7 +16,7 @@ public abstract class Bird {
     @Override
     public String toString() {
         return "Bird{" +
-                "name='" + name +
+                "name='" + getName() +
                 "  isFly: " + isFly() +
                 '}';
     }
