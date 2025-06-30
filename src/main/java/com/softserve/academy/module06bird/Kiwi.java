@@ -6,6 +6,7 @@ public class Kiwi extends NonFlyingBird {
         super("Kiwi");
     }
 
+    @Override
     public String getName() {
         return super.getName() + "  comment from class Kiwi";
     }
