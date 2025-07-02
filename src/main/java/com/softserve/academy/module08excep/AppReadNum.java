@@ -28,6 +28,8 @@ public class AppReadNum {
             }
         } catch (NumberFormatException e) {
             throw new NonDigitException(e);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
         return num;
     }
