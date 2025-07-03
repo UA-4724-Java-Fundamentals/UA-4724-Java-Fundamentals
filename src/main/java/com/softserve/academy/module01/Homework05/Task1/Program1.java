@@ -22,10 +22,18 @@ public class Program1 {
 
     public void run() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Введіть номер місяця:");
-        int num = sc.nextInt();
-        setNumMonth(num);
-        System.out.println("В цьому місяці: " + getDaysInMonth() + " днів");
+        try {
+            System.out.println("Введіть номер місяця:");
+            int num = sc.nextInt();
+            if (num < 1 || num > 12) {
+                throw new Exception("Invalid number of months");
+            }
+            setNumMonth(num);
+            System.out.println("В цьому місяці: " + getDaysInMonth() + " днів");
+        } catch (Exception e) {
+            System.out.println("Error:" + e.getMessage());
+        }
+
     }
 
 

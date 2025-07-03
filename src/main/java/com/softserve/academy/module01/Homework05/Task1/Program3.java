@@ -48,10 +48,19 @@ public class Program3 {
         Scanner sc = new Scanner(System.in);
         int[] arr = new int[5];
 
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println("Введіть елемнт" + (i + 1) + ":");
-            arr[i] = sc.nextInt();
-            sc.nextLine();
+        for (int i = 0; i < arr.length;) {
+            try {
+                System.out.println("Введіть елемнт" + (i + 1) + ":");
+                arr[i] = sc.nextInt();
+                sc.nextLine();
+                i++;
+            }catch (Exception e) {
+                System.out.println("Error: "+e.getMessage());
+                if (sc.hasNextLine()){
+                    sc.nextLine();
+                }
+            }
+
         }
 
         secondplus(arr);

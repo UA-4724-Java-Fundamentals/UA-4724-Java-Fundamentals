@@ -37,12 +37,24 @@ public class Car {
         Scanner sc = new Scanner(System.in);
         Car[] car = new Car[4];
 
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 4; ) {
             car[i] = new Car();
             System.out.println("Введіть рік випуску " + (i + 1) + " автомобіля");
-            int b = sc.nextInt();
-            sc.nextLine();
-            car[i].setYear(b);
+            try {
+                int b = sc.nextInt();
+                sc.nextLine();
+                if (b < 0) {
+                    throw new Exception("Negative number");
+                }
+                car[i].setYear(b);
+                i++;
+            } catch (Exception e) {
+                System.out.println("Invalid value " + e.getMessage());
+                if (sc.hasNextLine()) {
+                    sc.nextLine();
+                }
+            }
+
 
         }
 

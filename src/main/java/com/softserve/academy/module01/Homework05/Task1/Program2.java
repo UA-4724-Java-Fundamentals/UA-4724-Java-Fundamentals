@@ -9,9 +9,17 @@ public class Program2 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введіть 10 чисел");
         ArrayList<Integer> list = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
-            System.out.println("Число №" + (i + 1) + ":");
-            list.add(sc.nextInt());
+        for (int i = 0; i < 10; ) {
+            try {
+                System.out.println("Число №" + (i + 1) + ":");
+                list.add(sc.nextInt());
+                i++;
+            } catch (Exception e) {
+                System.out.println("Error: " + e.getMessage());
+                if (sc.hasNextLine()) {
+                    sc.nextLine();
+                }
+            }
 
         }
         boolean allPositive = true;
