@@ -8,7 +8,7 @@ public class Plant {
     public Plant(int size, String colorStr, String typeStr)
             throws ColorException, TypeException, IllegalArgumentException {
 
-        this.size = size;
+        this.size = checkSize(size);
 
         this.color = parseColor(colorStr);
         this.type = parseType(typeStr);
@@ -20,6 +20,13 @@ public class Plant {
         } catch (IllegalArgumentException e) {
             throw new ColorException("Invalid color: " + str);
         }
+    }
+
+    private int checkSize(int size) throws IllegalArgumentException {
+        if (size < 1 || size > 100) {
+            throw new IllegalArgumentException("Size must be between 1 and 100");
+        }
+        return size;
     }
 
     private Type parseType(String str) throws TypeException {
