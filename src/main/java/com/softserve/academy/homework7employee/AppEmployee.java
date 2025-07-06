@@ -1,4 +1,4 @@
-package com.softserve.academy.homework6employee;
+package com.softserve.academy.homework7employee;
 
 public class AppEmployee {
     public static void main(String[] args) {
