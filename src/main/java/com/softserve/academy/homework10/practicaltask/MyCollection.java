@@ -1,7 +1,5 @@
 package com.softserve.academy.homework10.practicaltask;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.*;
 
 public class MyCollection {
