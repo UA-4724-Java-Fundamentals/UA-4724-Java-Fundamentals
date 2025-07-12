@@ -12,11 +12,11 @@ public class MyCollection {
 
         System.out.println("Insert elements at First Negative Position: " + insertElementsAtFirstNegativePosition(myCollection));
 
-        System.out.println("Insert Zero Between different signs numbers :" + insertZeroBetweenModuleNumbers(myCollection));
+        System.out.println("Insert Zero Between different signs numbers: " + insertZeroBetweenModuleNumbers(myCollection));
 
         copyEndReverseList(myCollection, 5);
 
-        System.out.println("Remove last event element: " + removeLastEventElement(myCollection));
+        System.out.println("Remove last even element: " + removeLastEvenElement(myCollection));
 
         System.out.println("Remove first minimum: " + removeFirstMinimum(myCollection));
     }
@@ -30,9 +30,9 @@ public class MyCollection {
         return collection;
     }
 
-    static List<Integer> removeLastEventElement(List<Integer> collection) {
+    static List<Integer> removeLastEvenElement(List<Integer> collection) {
         for (int i = collection.size() - 1; i > 0; i--) {
-            if (collection.get(i) % 2 == 0) {
+            if (collection.get(i) % 2 == 0 && collection.get(i) != 0) {
                 collection.remove(i);
                 return collection;
             }
@@ -66,8 +66,7 @@ public class MyCollection {
         Integer maxValue = Collections.max(collection);
         int maxIndex = collection.indexOf(maxValue);
 
-        collection.set(minIndex, maxValue);
-        collection.set(maxIndex, minValue);
+        Collections.swap(collection, minIndex, maxIndex);
 
         return collection;
     }
