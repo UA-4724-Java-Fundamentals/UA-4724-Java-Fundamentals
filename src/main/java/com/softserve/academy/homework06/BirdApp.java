@@ -1,6 +1,4 @@
-package com.softserve.academy.module01;
-
-import java.util.Scanner;
+package com.softserve.academy.homework06;
 
 abstract class Bird {
     protected boolean feathers;

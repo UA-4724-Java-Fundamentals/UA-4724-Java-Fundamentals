@@ -1,4 +1,4 @@
-package com.softserve.academy.module01.homework06;
+package com.softserve.academy.homework06;
 
 public class Developer extends Employee {
     private String position;
