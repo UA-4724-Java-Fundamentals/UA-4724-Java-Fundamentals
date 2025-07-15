@@ -1,12 +1,11 @@
-package com.softserve.academy.homework10;
+package com.softserve.academy.homework11;
 
 import java.time.LocalDate;
 import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
 
 public class EmployeeMap {
     private static final Scanner scanner = new Scanner(System.in);
-    private static Map<Integer, Employee> map = new LinkedHashMap<>();
+    private static final Map<Integer, Employee> map = new LinkedHashMap<>();
 
     private static class Employee {
         private String name;
