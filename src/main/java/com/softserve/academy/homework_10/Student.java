@@ -63,7 +63,7 @@ public class Student {
 
             if (student.getAverageGrade() < 3) {
                 iterator.remove();
-                System.out.println("Student " + student.getName() + " is removed " + "(average score: " + String.format("%.2f", student.getAverageGrade()) + ")");
+                System.out.println("Removed: " + student);
             } else {
                 student.promote();
                 System.out.println("Student " + student.getName() + " promoted to " + student.getCourse() + " course (average score: " + String.format("%.2f", student.getAverageGrade()) + ")");
