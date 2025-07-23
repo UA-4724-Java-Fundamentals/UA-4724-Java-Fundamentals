@@ -4,6 +4,7 @@ import java.text.SimpleDateFormat;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalAdjuster;
 import java.time.temporal.TemporalAdjusters;
 import java.util.Calendar;
 import java.util.Date;
@@ -90,8 +91,8 @@ public class ApplTime {
 		// ZoneRules[currentStandardOffset=-03:00]
 		System.out.println("zone2.getRules() = " + zone2.getRules());
 		*/
-		// /*-
-		LocalDateTime a = LocalDateTime.of(2025, 8, 04, 12, 01);
+		/*-
+		LocalDateTime a = LocalDateTime.of(2025, 8, 15, 12, 01);
 		LocalDateTime t = a.with(TemporalAdjusters.firstDayOfMonth());
 		System.out.println("TemporalAdjusters.firstDayOfMonth() = " + t + "  getDayOfWeek() = " + t.getDayOfWeek());
 		//
@@ -104,7 +105,13 @@ public class ApplTime {
 		System.out.println("newDate add 3 years, 2 months, 1 day = " + newDate);
 		LocalDateTime newDateTime = currentDateTime.minus(period);
 		System.out.println("newDateTime = " + newDateTime);
-		// */
+		//
+		TemporalAdjuster firstMonInMonth = TemporalAdjusters.firstInMonth(DayOfWeek.MONDAY);
+		System.out.println("firstInMonth(DayOfWeek.MONDAY) = " + a.with(firstMonInMonth));
+		//
+		TemporalAdjuster nextTue = TemporalAdjusters.next(DayOfWeek.TUESDAY);
+		System.out.println("next(DayOfWeek.TUESDAY) = " + a.with(nextTue));
+		*/
 		/*-
 		Period period = Period.of(3, 2, 1).minusYears(1).minusMonths(1);
 		System.out.println("period = " + period);
@@ -115,7 +122,7 @@ public class ApplTime {
 		Duration duration = Duration.between(time2, time1);
 		System.out.println("duration = " + duration);
 		*/
-        /*-
+        // /*-
         LocalDate ofEpochDay = LocalDate.ofEpochDay(0L); // 01.01.1970
         System.out.println("ofEpochDay = " + ofEpochDay);
         //
@@ -136,12 +143,13 @@ public class ApplTime {
         System.out.println("System.currentTimeMillis() =\t" + System.currentTimeMillis());
         //
         // Convert Date to LocalDateTime
-        LocalDateTime localDate = new Date(System.currentTimeMillis()).toInstant().atZone(ZoneId.systemDefault())
+        LocalDateTime localDate = new Date(System.currentTimeMillis())
+				.toInstant().atZone(ZoneId.systemDefault())
                 .toLocalDateTime();
         // DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy 'at' hh:mm");
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss.SSS dd.MM.yyyy");
         System.out.println("localDate.format(formatter): " + localDate.format(formatter));
-        */
+        // */
     }
 }
   
