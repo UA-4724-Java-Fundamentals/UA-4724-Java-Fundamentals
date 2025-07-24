@@ -18,14 +18,21 @@ public class Employee {
     }
 
     static Optional<String> mostPopularName(Stream<Employee> employees) {
-        return employees
+
+        Map<String, Long> nameCounts = employees
                 .map(Employee::getName)
-                .collect(Collectors.groupingBy(
-                        name -> name, Collectors.counting()))
-                .entrySet()
+                .collect(Collectors.groupingBy(name -> name, Collectors.counting()));
+
+        return nameCounts.entrySet()
                 .stream()
-                .max(Map.Entry.comparingByValue())
-                .map(Map.Entry::getKey);
+                .collect(Collectors.groupingBy(
+                        Map.Entry::getValue,
+                        Collectors.mapping(Map.Entry::getKey, Collectors.toList())
+                ))
+                .entrySet().stream()
+                .max(Map.Entry.comparingByKey())
+                .filter(entry -> entry.getValue().size() == 1)
+                .map(entry -> entry.getValue().get(0));
 
 
     }
@@ -36,6 +43,7 @@ public class Employee {
                 new Employee("Din"),
                 new Employee("Sam"),
                 new Employee("Sam")
+
         );
 
         Optional<String> popular = Employee.mostPopularName(list.stream());
