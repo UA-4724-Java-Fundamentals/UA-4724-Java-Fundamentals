@@ -1,0 +1,3 @@
+Lines:3
+They often work on backend systems, web applications, and Android mobile apps. Java developers are skilled in writing clean, efficient code and using tools like Spring, Hibernate, and Maven.
+Oleksandr Rezunenko|21.05.0000
