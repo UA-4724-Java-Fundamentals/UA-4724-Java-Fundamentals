@@ -20,4 +20,12 @@ public class Dinglemouse {
         new Thread(new Logan5()).start();
         new Thread(new Jessica6()).start();
     }
+
+    class ThreadUtil {
+        public static void method1() {
+        }
+
+        public static void method2() {
+        }
+    }
 }
