@@ -1,0 +1,18 @@
+My career in software development began with writing simple public static void main methods in Java. At the time, I didn’t fully understand what the keyword public meant, but I knew it was essential — the program wouldn’t run without it. As I continued learning, I realized that public methods and classes were a foundational part of how code is shared, accessed, and structured in Java and many other languages.
+
+During my university years, I focused heavily on object-oriented programming. I studied how public interfaces enable abstraction, and how exposing too many public members in a class could lead to poor encapsulation. We had long debates about public versus private access, and the trade-offs between openness and safety in software design.
+
+My first real-world project involved building a public API for a public transportation system. The goal was to allow third-party developers to access real-time data about buses, routes, and schedules. It was my first exposure to thinking not just about code that works, but about code that would be consumed publicly by other developers. Documentation, versioning, and error handling suddenly became as important as the logic itself.
+
+Later, I joined a team responsible for maintaining several public-facing web applications. These were high-traffic services used by thousands of users daily. We had to ensure our public endpoints were secure, performant, and backwards-compatible. The stress of deploying code to production taught me the importance of testing, monitoring, and clear public communication during incidents.
+
+Outside of programming, I also invested time in improving my public speaking skills. I gave lightning talks at local meetups and presented technical topics to non-technical stakeholders. Being able to explain complex systems in plain, public-friendly language became one of the most valuable skills in my career.
+
+Eventually, I contributed to open-source projects hosted in public repositories on GitHub. At first, I was nervous about publishing my code for the public to see and critique. But over time, I learned that public collaboration is one of the best ways to grow — both technically and professionally.
+
+Today, I mentor junior developers and teach them not only about public modifiers in Java, but also about the broader concept of being a developer in the public eye: writing public blog posts, publishing open-source tools, and giving back to the public developer community.
+
+The word “public” has been a constant theme throughout my career — from the first public class I wrote in a Java tutorial, to public services used by real people, to contributing publicly to knowledge and tools that others can build upon.
+
+In software, as in life, being public means taking responsibility, sharing ideas openly, and being prepared for both feedback and praise. My journey is still unfolding, but the lessons I’ve learned about working in the public — and writing public code — will always guide my path.
+Optional[Today, I mentor junior developers and teach them not only about public modifiers in Java, but also about the broader concept of being a developer in the public eye: writing public blog posts, publishing open-source tools, and giving back to the public developer community.]Optional[Today, I mentor junior developers and teach them not only about public modifiers in Java, but also about the broader concept of being a developer in the public eye: writing public blog posts, publishing open-source tools, and giving back to the public developer community.]1996-01-27
