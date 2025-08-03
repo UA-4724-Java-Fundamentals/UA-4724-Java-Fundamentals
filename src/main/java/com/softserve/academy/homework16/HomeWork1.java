@@ -22,7 +22,7 @@ public class HomeWork1 {
         System.out.println(Arrays.toString(lines));
 
         // number of lines in file1.txt.
-        Files.writeString(file2.toPath(), "" + lines.length + System.lineSeparator(), StandardOpenOption.APPEND);
+        Files.writeString(file2.toPath(), lines.length + System.lineSeparator(), StandardOpenOption.APPEND);
 
         // the longest line in file1.txt.
         String longestLine = Arrays.stream(lines)
