@@ -5,12 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.softserve.academy</groupId>
-    <artifactId>ua-4724-java-fundamentals</artifactId>
+    <artifactId>ua4724web</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <packaging>war</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>21</java.version>
+        <java.version>11</java.version>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <org.slf4j.version>2.0.17</org.slf4j.version>
@@ -92,6 +94,21 @@
             <artifactId>gson</artifactId>
             <version>2.13.1</version>
         </dependency>
+
+        <!-- - - - - - Web - - - - - -->
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <version>6.1.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>javax.servlet</groupId>-->
+<!--            <artifactId>javax.servlet-api</artifactId>-->
+<!--            <version>4.0.1</version>-->
+<!--            <scope>provided</scope>-->
+<!--        </dependency>-->
 
     </dependencies>
 

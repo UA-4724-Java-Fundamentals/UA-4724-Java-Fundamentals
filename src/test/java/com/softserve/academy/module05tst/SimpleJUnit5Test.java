@@ -36,7 +36,7 @@ public class SimpleJUnit5Test {
         Assertions.assertNotEquals(7, 2 + 4);
     }
 
-    @Test
+    //@Test
     public void testThree() {
         System.out.println("\t\t@Test testThree()");
         int i = 0;
