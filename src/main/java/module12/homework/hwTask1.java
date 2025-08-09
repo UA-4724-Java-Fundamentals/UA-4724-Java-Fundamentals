@@ -2,16 +2,13 @@ package module12.homework;
 import java.util.Scanner;
 public class hwTask1 {
 
-
     public class SentenceAnalyzer {
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Please enter a sentence (e.g., five words):");
             String sentence = scanner.nextLine();
-
             // Split the sentence into an array of words
             String[] words = sentence.split("\\s+");
-
             if (words.length > 0) {
                 // Find the longest word
                 String longestWord = "";
@@ -22,7 +19,6 @@ public class hwTask1 {
                 }
                 System.out.println("The longest word is: " + longestWord);
                 System.out.println("Length of the longest word is: " + longestWord.length());
-
                 // Reverse the second word
                 if (words.length >= 2) {
                     String secondWord = words[1];
