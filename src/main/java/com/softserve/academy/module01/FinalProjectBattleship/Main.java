@@ -20,6 +20,7 @@ public class Main {
         }
     }
 
+    //Масив кораблів
     static Ship[] ships = {
             new Ship("Aircraft Carrier", 5),
             new Ship("Battleship", 4),
@@ -28,6 +29,7 @@ public class Main {
             new Ship("Destroyer", 2)
     };
 
+    //Поля гри
     static char[][] player1Field = new char[SIZE][SIZE];
     static char[][] player1Fog = new char[SIZE][SIZE];
     static char[][] player2Field = new char[SIZE][SIZE];
